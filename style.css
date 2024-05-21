@@ -1,0 +1,84 @@
+/*  <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+body {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+}
+
+.navbar {
+    background-color: rgba(69, 83, 98, 1);
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 2rem;
+}
+
+.navbar-brand::after{
+    color:grey
+}
+
+.navbar-nav .nav-link.active{
+    margin-left: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.containers {
+    padding: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.materi .card {
+    width: 30vw;
+    border-radius: 1rem;
+}
+
+.materi .card .card-body{
+    width: 30vw;
+    height: 70vh;
+    padding: 0;
+    
+}
+
+.materi .card .card-body .title-cont{
+    width: 30vw;
+    height: 10vh;
+    background-color: rgba(69, 83, 98, 1);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    padding: 1.5rem;
+}
+
+.materi .card .card-body .card-content{
+    height: 60vh;
+    width: 30vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.konten .card{
+    width: 55vw;
+    border-radius: 1rem;
+}
+
+.konten .card .card-body{
+    width: 55vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #f1f1f1;
+}
