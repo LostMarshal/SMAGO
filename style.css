@@ -27,9 +27,12 @@ body {
 
 .containers {
     padding: 5vw;
+    min-height: 100%;
 }
 
 .cards {
+    padding: 20px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -37,7 +40,7 @@ body {
 }
 
 .materi .card {
-    width: 30vw;
+    width: 25vw;
     border-radius: 1rem;
     margin-bottom: 2rem; /*spacing */
 }
@@ -67,14 +70,14 @@ body {
 }
 
 .konten .card{
-    width: 100%; /* dari fixed jadi 100% */
+    width: 55vw; /* dari fixed jadi 100% */
     max-width: 55vw; /* nambahin max width biar ga error*/
     border-radius: 1rem;
 }
 
 .konten .card .card-body{
     width: 100%; /* dari fixedmenjadi 100% */
-    height: auto; /* auto */
+    height: 65vh; /* dari fixed menjadi 70vh */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,6 +87,12 @@ body {
 footer{
     background-color: rgba(69, 83, 98, 1);
     color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: -50px;
 }
 
 /* collapsible */
@@ -123,7 +132,13 @@ a.collapsible:hover {
 
     .materi .card, .konten .card {
         width: 80vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
+        max-width: 80vw; /* nambahin max width biar ga error*/
     }
+
+    .konten .card .card-body{
+        height: 35vh;
+    }
+
 }
 
 @media (max-width: 768px) {
