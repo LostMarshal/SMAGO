@@ -174,3 +174,12 @@ a.collapsible:hover {
         width: 95vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
     }
 }
+
+
+/* soal-test css */
+
+.soal-containers {
+    padding-left: 5vw;
+    padding-top: 2vw;
+    min-height: 100%;
+}
