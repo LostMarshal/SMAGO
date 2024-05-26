@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-brand::after{
-    color:grey
+    color: grey;
 }
 
 .navbar-nav .nav-link.active{
@@ -27,28 +27,32 @@ body {
 
 .containers {
     padding: 5vw;
+    min-height: 100%;
 }
 
 .cards {
+    padding: 20px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap; /* biar bisa di sesuain card nya */
 }
 
 .materi .card {
-    width: 30vw;
+    width: 25vw;
     border-radius: 1rem;
+    margin-bottom: 2rem; /*spacing */
 }
 
 .materi .card .card-body{
-    width: 30vw;
-    height: 70vh;
+    width: 100%; /* jadi 100% biar flexible */
+    height: auto; /* biar ngikutin width nya */
     padding: 0;
-    
 }
 
 .materi .card .card-body .title-cont{
-    width: 30vw;
+    width: 100%; /* biar flexible:v */
     height: 10vh;
     background-color: rgba(69, 83, 98, 1);
     border-top-left-radius: 1rem;
@@ -58,21 +62,22 @@ body {
 }
 
 .materi .card .card-body .card-content{
-    height: 60vh;
-    width: 30vh;
+    height: auto; /* auto */
+    width: 100%; /* dari fixed menjadi 100% */
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .konten .card{
-    width: 55vw;
+    width: 55vw; /* dari fixed jadi 100% */
+    max-width: 55vw; /* nambahin max width biar ga error*/
     border-radius: 1rem;
 }
 
 .konten .card .card-body{
-    width: 55vw;
-    height: 70vh;
+    width: 100%; /* dari fixedmenjadi 100% */
+    height: 65vh; /* dari fixed menjadi 70vh */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,6 +87,12 @@ body {
 footer{
     background-color: rgba(69, 83, 98, 1);
     color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: -50px;
 }
 
 /* collapsible */
@@ -101,4 +112,65 @@ a.collapsible:hover {
     display: flex;
     flex-direction: column;
     display: none;
+}
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link.active {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .materi .card, .konten .card {
+        width: 80vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
+        max-width: 80vw; /* nambahin max width biar ga error*/
+    }
+
+    .konten .card .card-body{
+        height: 35vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .containers {
+        padding: 2vw;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link.active {
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .materi .card, .konten .card {
+        width: 90vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link.active {
+        margin-left: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .materi .card, .konten .card {
+        width: 95vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
+    }
 }
