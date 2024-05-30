@@ -35,3 +35,8 @@ var points = 0;
             document.querySelector("#sc").innerHTML = points;
           }
         }
+
+  function changeVideo(newVideoId) {
+  var iframe = document.getElementById('youtubeVideo');
+  iframe.src = "https://www.youtube.com/embed/" + newVideoId;
+}
