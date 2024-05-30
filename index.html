@@ -89,7 +89,7 @@
                     <a class="collapsible">&nbsp; > Bab 1</a>
                     <div class="collapsible-content">
                       <a href="#" onclick="changeVideo('zazPHIb4p3E')" class="list-group-item list-group-item-action">&nbsp; &nbsp; > Materi</a>
-                      <a href="#" class="list-group-item list-group-item-action">&nbsp; &nbsp; > Soal Latihan</a>
+                      <a href="/soal11-1.html" class="list-group-item list-group-item-action">&nbsp; &nbsp; > Soal Latihan</a>
                     </div>
                     <a class="collapsible">&nbsp; > Bab 2</a>
                     <div class="collapsible-content">
@@ -203,7 +203,7 @@
             var isClicked = false;
 
             // Listen for click event on the collapsible element
-            $('.collapsible-content a').click(function() {
+            $('.collapsible-content .list-group-item').click(function() {
                 // If the collapsible element has not been clicked before, toggle the display of the h5 and p elements and the iframe
                 if (!isClicked) {
                     $('.konten .card .card-body h5, .konten .card .card-body p').toggle();

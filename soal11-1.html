@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SMAGO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">S M A G O</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Beranda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="soal-containers">
+        <div class="soal-content">
+          <form id="quiz">
+            <h2>Kelas 11</h2>
+            <h3 id="o1">BAB 1 : Harmonisasi Hak dan Kewajiban Asasi Manusia dalam Perspektif Pancasila</h3>
+            
+            <p id="o1">
+            <form id="formbg">
+            <label>1. Apa yang dimaksud dengan hak asasi manusia?</label>
+            <br>
+            <input type="radio" name="g1" onclick="falseAns(0)">
+            <label>Hak yang diberikan oleh pemerintah</label>
+            <br>
+            <input type="radio" name="g1" onclick="falseAns(0)">
+            <label>Hak yang hanya berlaku di negara tertentu</label>
+            <br>
+            <input type="radio" name="g1" onclick="trueAns(0)">
+            <label>Hak dasar yang melekat pada diri manusia menurut kodratnya</label>
+            <br>
+            <input type="radio" name="g1" onclick="falseAns(0)">
+            <label>Hak yang dapat dicabut kapan saja</label>
+            
+            <p id="o1">
+            <form id="formbg">
+            <label>2. Manakah yang termasuk dalam tiga hak dasar hak asasi manusia?</label>
+            <br>
+            <input type="radio" name="g2" onclick="falseAns(1)">
+            <label>Hak politik, hak ekonomi, dan hak sosial</label>
+            <br>
+            <input type="radio" name="g2" onclick="trueAns(1)">
+            <label>Hak hidup, hak kebebasan, dan hak kebahagiaan</label>
+            <br>
+            <input type="radio" name="g2" onclick="falseAns(1)">
+            <label>Hak pendidikan, hak kesehatan, dan hak pekerjaan</label>
+            <br>
+            <input type="radio" name="g2" onclick="falseAns(1)">
+            <label>Hak milik, hak bekerja, dan hak berkeluarga</label>
+
+            <p id="o1">
+            <form id="formbg">
+            <label>3. Ciri khusus dari hak asasi manusia yang menyatakan bahwa hak tersebut berlaku di seluruh dunia tanpa pengecualian adalah:</label>
+            <br>
+            <input type="radio" name="g3" onclick="falseAns(2)">
+            <label>Hakiki</label>
+            <br>
+            <input type="radio" name="g3" onclick="trueAns(2)">
+            <label>Universal</label>
+            <br>
+            <input type="radio" name="g3" onclick="falseAns(2)">
+            <label>Tidak dapat dicabut</label>
+            <br>
+            <input type="radio" name="g3" onclick="falseAns(2)">
+            <label>Tidak dapat dibagi</label>
+
+            <p id="o1">
+            <form id="formbg">
+            <label>4. Ciri khusus dari hak asasi manusia yang menyatakan bahwa hak tersebut tidak dapat dihilangkan oleh siapa pun adalah:</label>
+            <br>
+            <input type="radio" name="g4" onclick="falseAns(2)">
+            <label>Hakiki</label>
+            <br>
+            <input type="radio" name="g4" onclick="falseAns(2)">
+            <label>Universal</label>
+            <br>
+            <input type="radio" name="g4" onclick="trueAns(2)">
+            <label>Tidak dapat dicabut</label>
+            <br>
+            <input type="radio" name="g4" onclick="falseAns(2)">
+            <label>Tidak dapat dibagi</label>
+
+            <p id="o1">
+            <form id="formbg">
+            <label>5. Bagaimana hubungan antara hak asasi manusia dengan kewajiban asasi manusia?</label>
+            <br>
+            <input type="radio" name="g5" onclick="falseAns(4)">
+            <label>Hak dan kewajiban tidak saling terkait</label>
+            <br>
+            <input type="radio" name="g5" onclick="falseAns(4)">
+            <label>Hak hanya diberikan jika kewajiban dipenuhi</label>
+            <br>
+            <input type="radio" name="g5" onclick="trueAns(4)">
+            <label>Hak asasi manusia dan kewajiban asasi manusia memiliki hubungan kausalitas yang saling berkaitan</label>
+            <br>
+            <input type="radio" name="g5" onclick="falseAns(4)">
+            <label>Kewajiban asasi manusia lebih penting daripada hak asasi manusia</label>
+        
+            <p id="o1">
+            <form id="formbg">
+            <label>6. Apa yang dimaksud dengan kewajiban asasi manusia?</label>
+            <br>
+            <input type="radio" name="g6" onclick="falseAns(5)">
+            <label>Kewajiban yang hanya perlu dilakukan oleh pejabat pemerintah</label>
+            <br>
+            <input type="radio" name="g6" onclick="trueAns(5)">
+            <label> Kewajiban dasar yang harus dilaksanakan oleh setiap individu dengan penuh tanggung jawab</label>
+            <br>
+            <input type="radio" name="g6" onclick="falseAns(5)">
+            <label>Kewajiban yang hanya berlaku di sekolah</label>
+            <br>
+            <input type="radio" name="g6" onclick="falseAns(5)">
+            <label>Kewajiban yang dapat dipilih untuk dilakukan atau tidak</label>
+        
+            <p id="o1">
+            <form id="formbg">
+            <label>7. Bagaimana Pancasila menjamin hak dan kewajiban asasi manusia?</label>
+            <br>
+            <input type="radio" name="g7" onclick="falseAns(6)">
+            <label>Melalui perintah langsung dari pemerintah</label>
+            <br>
+            <input type="radio" name="g7" onclick="trueAns(6)">
+            <label>Melalui nilai-nilai dasar, nilai instrumental, dan nilai praksis</label>
+            <br>
+            <input type="radio" name="g7" onclick="falseAns(6)">
+            <label>Melalui undang-undang yang mengatur semua aspek kehidupan</label>
+            <br>
+            <input type="radio" name="g7" onclick="falseAns(6)">
+            <label>Melalui kebijakan ekonomi nasional</label>
+
+            <p id="o1">
+            <form id="formbg">
+            <label>8. Instrumen perundang-undangan yang menjamin hak asasi manusia di Indonesia adalah:</label>
+            <br>
+            <input type="radio" name="g8" onclick="falseAns(7)">
+            <label>Ketetapan MPR, Peraturan Menteri, dan Peraturan Daerah</label>
+            <br>
+            <input type="radio" name="g8" onclick="trueAns(7)">
+            <label>Undang-Undang Dasar, Ketetapan MPR, dan undang-undang organik</label>
+            <br>
+            <input type="radio" name="g8" onclick="falseAns(7)">
+            <label>Surat Edaran, Peraturan Gubernur, dan Peraturan Walikota</label>
+            <br>
+            <input type="radio" name="g8" onclick="falseAns(7)">
+            <label>Peraturan Sekolah, Tata Tertib, dan Instruksi Presiden</label>
+
+            <p id="o1">
+            <form id="formbg">
+            <label>9. Apa peran Komnas HAM dalam penegakan hak asasi manusia di Indonesia?</label>
+            <br>
+            <input type="radio" name="g9" onclick="trueAns(8)">
+            <label>Mengawasi dan meneliti penegakan hak asasi manusia, serta memberikan rekomendasi kepada pemerintah</label>
+            <br>
+            <input type="radio" name="g9" onclick="falseAns(8)">
+            <label>Menetapkan hukum pidana dan perdata</label>
+            <br>
+            <input type="radio" name="g9" onclick="falseAns(8)">
+            <label>Membuat kebijakan ekonomi</label>
+            <br>
+            <input type="radio" name="g9" onclick="falseAns(8)">
+            <label>Mengatur perdagangan internasional</label>
+
+            <p id="o1">
+            <form id="formbg">
+            <label>10. Mengapa pelanggaran hak asasi manusia masih terjadi di Indonesia meskipun sudah ada peraturan perundang-undangan yang mengatur HAM?</label>
+            <br>
+            <input type="radio" name="g10" onclick="falseAns(9)">
+            <label>Faktor ekonomi yang lemah</label>
+            <br>
+            <input type="radio" name="g10" onclick="trueAns(9)">
+            <label>Faktor internal seperti sikap egois, rendahnya kesadaran HAM, sikap tidak toleran, serta faktor eksternal seperti penyalahgunaan kekuasaan, dan penyalahgunaan teknologi</label>
+            <br>
+            <input type="radio" name="g10" onclick="falseAns(9)">
+            <label>Kurangnya pendidikan formal</label>
+            <br>
+            <input type="radio" name="g10" onclick="falseAns(9)">
+            <label>Sistem pemerintahan yang otoriter</label>
+            
+            
+            <div id="button">
+            <input type="button" name="showerOfScores" value="Lihat Skor" onclick="totalSum()" />
+            <br />
+            <br />
+              Skor Total: <span id="sc"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footers text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          ©SMAGO 2024.
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </body>
+</html>
