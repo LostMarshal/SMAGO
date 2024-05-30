@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var points = 0;
         var answers = [];
-        var totalQuestions = 3; // Update this with the total number of questions
+        var totalQuestions = 10; // Update this with the total number of questions.
         
         function trueAns(q) {
           if(answers[q] != 1) {
