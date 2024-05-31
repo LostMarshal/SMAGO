@@ -126,13 +126,14 @@ a.collapsible:hover {
     }
 
     .cards {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .materi .card, .konten .card {
         width: 80vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
         max-width: 80vw; /* nambahin max width biar ga error*/
+        margin-bottom: 5vh;
     }
 
     .konten .card .card-body{
