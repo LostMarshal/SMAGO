@@ -70,14 +70,22 @@ body {
 }
 
 .konten .card{
+<<<<<<< HEAD
     width: 55vw; /* dari fixed jadi 100% */
+=======
+    width: 100%; /* dari fixed jadi 100% */
+>>>>>>> bbb214ce556be505c881227b3c25a3173e9a54db
     max-width: 55vw; /* nambahin max width biar ga error*/
     border-radius: 1rem;
 }
 
 .konten .card .card-body{
     width: 100%; /* dari fixedmenjadi 100% */
+<<<<<<< HEAD
     height: 65vh; /* dari fixed menjadi 70vh */
+=======
+    height: auto; /* auto */
+>>>>>>> bbb214ce556be505c881227b3c25a3173e9a54db
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,12 +134,17 @@ a.collapsible:hover {
     }
 
     .cards {
+<<<<<<< HEAD
         flex-direction: column-reverse;
+=======
+        flex-direction: column;
+>>>>>>> bbb214ce556be505c881227b3c25a3173e9a54db
         align-items: center;
     }
 
     .materi .card, .konten .card {
         width: 80vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
+<<<<<<< HEAD
         max-width: 80vw; /* nambahin max width biar ga error*/
         margin-bottom: 5vh;
     }
@@ -140,6 +153,9 @@ a.collapsible:hover {
         height: 35vh;
     }
 
+=======
+    }
+>>>>>>> bbb214ce556be505c881227b3c25a3173e9a54db
 }
 
 @media (max-width: 768px) {
@@ -175,6 +191,7 @@ a.collapsible:hover {
         width: 95vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
     }
 }
+<<<<<<< HEAD
 
 
 /* soal-test css */
@@ -185,3 +202,5 @@ a.collapsible:hover {
     min-height: 100%;
     margin-bottom: 10vh;
 }
+=======
+>>>>>>> bbb214ce556be505c881227b3c25a3173e9a54db
