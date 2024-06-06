@@ -10,31 +10,33 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-var points = 0;
-        var answers = [];
-        var totalQuestions = 10; // Update this with the total number of questions.
-        
-        function trueAns(q) {
-          if(answers[q] != 1) {
-            points += 10; //Only + will not change the score because It's adding without putting. But here we have both adding && putting. 
-            answers[q] = 1;
-          }
-        }
-        
-        function falseAns(q) {
-          if(answers[q] == 1){
-            points -= 10;
-            answers[q] = -1;
-          }
-        }
-        
-        function totalSum() {
-          if (answers.length < totalQuestions) {
-            alert("Mohon jawab semua soal sebelum melihat skor!");
-          } else {
-            document.querySelector("#sc").innerHTML = points;
-          }
-        }
+let points = 0;
+let answeredQuestions = 0;
+const totalQuestions = 10;
+
+function trueAns() {
+  points += 10;
+  answeredQuestions++;
+}
+
+function falseAns() {
+  answeredQuestions++;
+}
+
+
+function totalSum() {
+  if (answeredQuestions < totalQuestions) {
+    alert("Mohon jawab semua soal sebelum melihat skor!");
+    console.log(answeredQuestions, totalQuestions);
+  } else {
+    let confirmation = confirm("Apakah anda yakin dengan jawaban anda? Button akan menjadi disable setelah anda memilih ya");
+    if (confirmation) {
+      document.querySelector("#sc").innerHTML = points;
+      let button = document.querySelector("[name='showerOfScores']");
+      button.disabled = true;
+    }
+  }
+}
 
   function changeVideo(newVideoId) {
   var iframe = document.getElementById('youtubeVideo');
