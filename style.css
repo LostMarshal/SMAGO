@@ -126,13 +126,14 @@ a.collapsible:hover {
     }
 
     .cards {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .materi .card, .konten .card {
         width: 80vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
         max-width: 80vw; /* nambahin max width biar ga error*/
+        margin-bottom: 5vh;
     }
 
     .konten .card .card-body{
@@ -173,4 +174,14 @@ a.collapsible:hover {
     .materi .card, .konten .card {
         width: 95vw; /* Mengubah width untuk ukuran layar yang lebih kecil */
     }
+}
+
+
+/* soal-test css */
+
+.soal-containers {
+    padding-left: 5vw;
+    padding-top: 2vw;
+    min-height: 100%;
+    margin-bottom: 10vh;
 }
