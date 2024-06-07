@@ -11,23 +11,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 let points = 0;
-let answeredQuestions = 0;
+let answeredQuestions = [];
 const totalQuestions = 10;
 
 function trueAns() {
   points += 10;
-  answeredQuestions++;
+  let aq = 1
+  answeredQuestions.push(aq);
 }
 
 function falseAns() {
-  answeredQuestions++;
+  let aq = 1
+  answeredQuestions.push(aq);;
 }
 
 
 function totalSum() {
-  if (answeredQuestions < totalQuestions) {
+  if (answeredQuestions.length < totalQuestions) {
     alert("Mohon jawab semua soal sebelum melihat skor!");
-    console.log(answeredQuestions, totalQuestions);
+    console.log(answeredQuestions.length, totalQuestions);
   } else {
     let confirmation = confirm("Apakah anda yakin dengan jawaban anda? Button akan menjadi disable setelah anda memilih ya");
     if (confirmation) {
